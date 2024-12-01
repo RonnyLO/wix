@@ -1825,6 +1825,7 @@ static HRESULT InitializeVariableVersionNT(
     case OS_INFO_VARIABLE_WindowsBuildNumber:
         value.llValue = static_cast<LONGLONG>(ovix.dwBuildNumber);
         value.Type = BURN_VARIANT_TYPE_NUMERIC;
+        break;
     default:
         AssertSz(FALSE, "Unknown OS info type.");
         break;
